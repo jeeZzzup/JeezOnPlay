@@ -1,0 +1,149 @@
+23:38:29,446 INFO  ~ Starting /Users/jeez/Dev/workspace/JeezOnPlay
+23:38:29,450 INFO  ~ Module secure is available (/Users/jeez/Dev/tools/play-1.1/modules/secure)
+23:38:29,450 INFO  ~ Module gae is available (/Users/jeez/Dev/tools/play-1.1/modules/gae-1.4)
+23:38:30,611 WARN  ~ 
+23:38:30,611 WARN  ~ Google App Engine module
+23:38:30,611 WARN  ~ ~~~~~~~~~~~~~~~~~~~~~~~
+23:38:30,611 WARN  ~ No Google App Engine environment found. Setting up a development environement
+23:38:30,659 WARN  ~ 
+23:38:30,659 WARN  ~ You're running Play! in DEV mode
+23:38:30,765 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+23:38:36,475 INFO  ~ Application 'JeeZzzup Services...' is now started !
+23:40:36,912 ERROR ~ 
+
+@64pd9848k
+Internal Server Error (500) for request GET /services/listdevservices
+
+Template execution error (In /app/views/services/list.html around line 3)
+Execution error occured in template /app/views/services/list.html. Exception raised was NullPointerException : Cannot invoke method size() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method size() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:84)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:226)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:21)
+	at play.mvc.Controller.renderTemplate(Controller.java:588)
+	at play.mvc.Controller.renderTemplate(Controller.java:568)
+	at controllers.Services.listDevServices(Services.java:23)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:408)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:403)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:176)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at /app/views/services/list.html.(line:3)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	... 8 more
+23:43:51,335 ERROR ~ 
+
+@64pd9848m
+Internal Server Error (500) for request GET /
+
+Oops: UnexpectedException
+An unexpected error occured caused by exception UnexpectedException: While applying class play.classloading.enhancers.LocalvariablesNamesEnhancer on controllers.Services
+
+play.exceptions.UnexpectedException: While applying play.CorePlugin@3dbbd23f on controllers.Services
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:215)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:296)
+	at play.Play.detectChanges(Play.java:517)
+	at play.Invoker$Invocation.init(Invoker.java:100)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.exceptions.UnexpectedException: While applying class play.classloading.enhancers.LocalvariablesNamesEnhancer on controllers.Services
+	at play.CorePlugin.enhance(CorePlugin.java:295)
+	at play.classloading.ApplicationClasses$ApplicationClass.enhance(ApplicationClasses.java:212)
+	... 4 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 6
+	at javassist.bytecode.stackmap.Tracer.doOpcode0_53(Tracer.java:232)
+	at javassist.bytecode.stackmap.Tracer.doOpcode(Tracer.java:94)
+	at javassist.bytecode.stackmap.MapMaker.make(MapMaker.java:161)
+	at javassist.bytecode.stackmap.MapMaker.make(MapMaker.java:171)
+	at javassist.bytecode.stackmap.MapMaker.make(MapMaker.java:120)
+	at javassist.bytecode.stackmap.MapMaker.make(MapMaker.java:96)
+	at javassist.bytecode.MethodInfo.rebuildStackMap(MethodInfo.java:404)
+	at javassist.bytecode.MethodInfo.rebuildStackMapIf6(MethodInfo.java:389)
+	at javassist.CtBehavior.insertBefore(CtBehavior.java:674)
+	at javassist.CtBehavior.insertBefore(CtBehavior.java:640)
+	at play.classloading.enhancers.LocalvariablesNamesEnhancer.enhanceThisClass(LocalvariablesNamesEnhancer.java:193)
+	at play.CorePlugin.enhance(CorePlugin.java:292)
+	... 5 more
+23:44:07,323 ERROR ~ 
+
+@64pd9848n
+Internal Server Error (500) for request GET /services/listdevservices
+
+Template execution error (In /app/views/services/list.html around line 3)
+Execution error occured in template /app/views/services/list.html. Exception raised was NullPointerException : Cannot invoke method size() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method size() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:84)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:226)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:21)
+	at play.mvc.Controller.renderTemplate(Controller.java:588)
+	at play.mvc.Controller.renderTemplate(Controller.java:568)
+	at controllers.Services.listDevServices(Services.java:23)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:408)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:403)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:176)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at /app/views/services/list.html.(line:3)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	... 8 more
+23:45:08,850 ERROR ~ 
+
+@64pd9848o
+Internal Server Error (500) for request GET /services/listsearchservices
+
+Template execution error (In /app/views/services/list.html around line 3)
+Execution error occured in template /app/views/services/list.html. Exception raised was NullPointerException : Cannot invoke method size() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method size() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:84)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:226)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:21)
+	at play.mvc.Controller.renderTemplate(Controller.java:588)
+	at play.mvc.Controller.renderTemplate(Controller.java:568)
+	at controllers.Services.listSearchServices(Services.java:35)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:408)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:403)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:176)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at /app/views/services/list.html.(line:3)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	... 8 more
+23:56:37,802 ERROR ~ 
+
+@64pd98491
+Internal Server Error (500) for request GET /services/listdevtools
+
+No route found (In /app/views/services/list.html around line 9)
+No route able to invoke action Services.launch was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:80)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:21)
+	at play.mvc.Controller.renderTemplate(Controller.java:588)
+	at play.mvc.Controller.renderTemplate(Controller.java:568)
+	at controllers.Services.render(Services.java:29)
+	at controllers.Services.listDevTools(Services.java:24)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:408)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:403)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:176)
+	at Invocation.HTTP Request(Play!)
+00:03:14,870 ERROR ~ 
+
+@64pd98493
+Internal Server Error (500) for request GET /services/listdevtools
+
+Template not found (In /app/controllers/Services.java around line 21)
+The template Services/launch.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Services/launch.html
+	at play.mvc.Controller.renderTemplate(Controller.java:595)
+	at play.mvc.Controller.renderTemplate(Controller.java:568)
+	at play.mvc.Controller.render(Controller.java:623)
+	at controllers.Services.launch(Services.java:21)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:408)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:403)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:176)
+	at Invocation.HTTP Request(Play!)

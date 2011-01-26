@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" href="http://www.reblis.com/mobile/wp-content/themes/reblis-mobile/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/style.css'}">
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"/>
+     	<script src="@{'/public/javascripts/cufon-yui.js'}" type="text/javascript" charset="utf-8"/>
+     	<script src="@{'/public/javascripts/arial.js'}" type="text/javascript" charset="utf-8"/>
+     	<script src="@{'/public/javascripts/cuf_run.js'}" type="text/javascript" charset="utf-8"/>
+    </head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><small>Simples Services</small> {jee<span>Zzz</span>up}</h1>
+      </div>
+      
+          Welcome ${user}!  <a href="@{Secure.logout()}">Log out</a>
+        
+      <div class="clr"></div>    
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="sidebar">
+         <div class="menu_nav">
+        <ul>
+          <li><a href="@{Application.index()}">Home</a></li>
+           <li><a href="@{Services.listDevTools()}">Developments</a></li>
+          <li><a href="@{Services.listSearchs()}">Searchs</a></li>
+		  <li><a href="@{Services.listBackups()}">Backups</a></li>
+       </ul> 
+        <div class="clr"></div>
+      </div>
+      <div class="search">
+          <form id="form" name="form" method="post" action="#">
+            <span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />          
+            </span>
+          </form>
+      </div>   
+      <div class="mainbar">
+        <div class="article">
+          #{doLayout /} 
+        </div>        
+      </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="footer">
+      <p class="lf">&copy; Copyright <a href="#">jee<span>Zzz</span>up</a>.</p>
+      <div class="clr"></div>
+      <p class="lf">Layout by Free <a href="http://www.freewebsitetemplatez.com/">Website Templates</a></p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
